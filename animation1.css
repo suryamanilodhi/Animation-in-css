@@ -1,0 +1,187 @@
+.big_box{
+    border:2px solid red;
+    height:600px;
+    width: 800px;
+    margin: 20px;
+    /* transform:translate(800px,200px);
+    transform:translatex(300px);
+    transform:translatey(400px); */
+    
+    
+
+}
+.small_box{
+    border:2px solid blue;
+    /* background-color: bisque; */
+    height: 100px;
+    width: 100px;
+    margin:200px;
+    /* transform:translate(400px,200px); */
+    transform:translatex(400px);
+    /* transform:translatey(600px); */
+    /* transform: scale(2); */
+    /* transform: scaleX(3); */
+    /* transform: scaley(3); */
+    background-image: url("https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.small_box:hover{
+    transform: scale(3);
+}
+
+.img_div{
+    border:2px solid blue;
+    height: 400px;
+     width: 400px;
+     margin:100px;
+    
+     overflow: hidden;
+
+}
+.img_div img{
+    height: 300px;
+    width: 300px;
+    margin:40px;
+   /* transition:transform 8s; */
+   
+   
+}
+.img_div img:hover{
+    transform: scale(2);
+    z-index: 1;
+}
+
+.section_div{
+    border:2px solid red;
+    width: 100%;
+    height: 530px;
+
+}
+.child_div{
+    border:1px solid blueviolet;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin:20px;
+    animation-name:example;
+    animation-duration: 3s;
+    animation-iteration-count:4;
+    
+
+}
+    
+@keyframes example{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blueviolet;
+    }
+}
+
+.key{
+    border:2px solid red;
+    height: 300px;
+    width: 300px;
+    background-color: bisque;
+    margin:10px;
+    animation-name:example1;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+}
+
+@keyframes example1{
+    25%{
+        border:2px solid red;
+        background-color: yellow;
+        transform: rotate(30deg);
+
+    }
+    50%{
+        border:2px solid gray;
+        background-color: plum;
+        transform: rotate(80deg);
+    }
+    75%{
+        border:2px solid gray;
+        background-color: greenyellow;
+        transform: rotate(130deg);
+    }
+    100%{
+        border:2px solid red;
+        background-color: blue;
+        border-radius:50%;
+        
+
+    }
+}
+
+.key2{
+    border:2px solid red;
+    height: 600px;
+    width: 100%;
+    margin:10px;
+}
+.key2_div{
+    border:2px solid blue;
+   height: 100px;
+   width: 100px;
+   margin:10px;
+   position:relative;
+   background-color: aqua;
+   animation-name: example2;
+   animation-duration: 19s;
+   animation-iteration-count:4;
+}
+
+@keyframes example2{
+    
+     25%{
+        left:800px; top:10px;
+     }
+     50%{
+        left:800px; top:400px;
+     }
+     100%{
+        left:10px; top:400px;
+     }
+}
+
+.main{
+    border:2px solid red;
+    width: 100%;
+    height: 800px;
+    margin:10px;
+
+}
+.main_div{
+    border:2px solid blue;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation-name:example3;
+    animation-duration: 8s;
+    animation-iteration-count: 4;
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    /* /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example3{
+    from{
+        left:10px;
+    }
+    to{
+        left:800px;
+    }
+}
+

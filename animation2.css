@@ -1,0 +1,90 @@
+.div1{
+    border:2px solid red;
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100px;
+    margin:100px;
+    transition: 3s;
+    /* by default  transform origin is center */
+    transform-origin: right bottom;
+    /* transform-origin:left; */
+    /* transform-origin:right; */
+    /* transform-origin:left top; */
+    /* transform-origin:right top; */ 
+    /* transform-origin:left bottom; */
+}
+.div1:hover{
+    transform: rotate(360deg);
+}
+
+.div2{
+    border:2px solid red;
+    background-color: pink;
+    height: 300px;
+    width: 300px;
+    margin:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.div2 h1{
+    transform:translate(300px,0px);
+    transition:transform 4s;
+}
+.div2:hover h1{
+    transform: translate(0px,0px);
+}
+.div3{
+    height: 200px;
+    width: 200px;
+    border:2px solid red;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+.child_div{
+    height: 200px;
+    width: 200px;
+    border:2px solid red;
+    border-radius:50%;
+    position: absolute;
+    z-index: -1;
+    background-color: red;
+    transform:scale(0);
+    transition: transform 3s;
+}
+.div3:hover .child_div{
+    transform: scale(1);
+}
+.div3:hover h3{
+    color:white;
+    
+}
+
+.css1 li{
+    list-style-type:none;
+    display:inline-flex;
+    margin:20px;
+
+    position: relative;
+}
+.css1 li::after{
+    content:' ';
+    height: 20px;
+    width: 30px;
+    background-color: yellowgreen;
+    transform: scale(0);
+    position: absolute;
+    left:-10px;
+    z-index: -1;
+    transition: 2s;
+    transform-origin: left;
+}
+.css1 li:hover::after{
+    transform: scale(2);
+}
